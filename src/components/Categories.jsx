@@ -12,7 +12,7 @@ function Categories() {
   return (
     <div className='categories'>
       <ul className='categoriesItems'>
-        {categories.map((el, index) => (<li className={activeIndex === index ? 'active' : ''} onClick={() => onClickCategory(index)}>{el}</li>))}
+        {categories.map((el, index) => (<li key={index} className={activeIndex === index ? 'active' : ''} onClick={() => onClickCategory(index)}>{el}</li>))}
       </ul>
     </div>
   );
