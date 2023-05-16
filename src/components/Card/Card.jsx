@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-
 function Card({ title, price, imageUrl, sizes, types }) {
   const [activeType, setActiveType] = useState(0);
   const [activeSize, setActiveSize] = useState(0);
   const typeNames = ['тонкое', 'традиционное'];
 
   return (
-    <div className="pizza-block">
+    <div className='pizza-block-wrapper'>
+     <div className="pizza-block">
       <img
         className="pizza-block__image"
         src={imageUrl}
@@ -41,6 +41,7 @@ function Card({ title, price, imageUrl, sizes, types }) {
         </button>
       </div>
     </div>
+   </div>
   );
 }
 
