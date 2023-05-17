@@ -28,5 +28,24 @@
     p {
       color: #7b7b7b;
     }
+
+    @media (max-width: 768px) {
+      div {
+        h1 {
+          margin-top: 3px;
+        }
+
+        p {
+          display: none;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    &__price {
+      display: none;
+    }
   }
 }

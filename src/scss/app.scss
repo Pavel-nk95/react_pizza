@@ -56,12 +56,25 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1410px) {
       flex-direction: column;
+
+      .sort {
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .categories {
+        ul {
+          li {
+            padding: 8px 20px;
+          }
+        }
+      }
     }
 
     .categories {
-      margin-bottom: 20px;
 
       ul {
         flex-wrap: wrap;
